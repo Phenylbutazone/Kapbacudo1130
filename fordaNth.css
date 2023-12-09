@@ -1,0 +1,107 @@
+*
+ {
+  margin:0px;padding:0px;
+  letter-spacing:8px;
+  image-rendering: pixelated;
+  font-smooth: never;-webkit-font-smoothing: none;
+  }
+
+a {
+    text-decoration:none;
+
+    }
+
+a:link {
+    color:#d2738a;
+    }
+
+a:visited {
+    color:#d2738a;
+    }
+
+a:hover {
+    color:#ffffff;
+    animation: wiredB2 1s ease-out infinite;
+
+    }
+
+a:active {
+    color:#d2738a;
+    }
+
+h1 {
+    font-size:20px;
+    font-family:Times, "Times New Roman", serif;
+    font-weight:normal;
+    clear:both;
+    }
+
+
+
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color:#130c0e;
+    color:#f4416e;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 0% 0%;
+
+}
+
+h2 
+{
+    color: #f4416e;
+}
+
+label 
+{
+    display: block;
+    margin: 10px 0;
+    color: #f4416e;
+}
+
+input
+{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button 
+{
+    background-color: #d4d7f8;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h3 
+{
+    margin-top: 20px;
+    color: #f4416e;
+}
+
+p 
+{
+    margin: 10px 0;
+    color: #666;
+}
+
+h4
+{
+    color: #000000;
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    background: #b2cbe4;
+    text-transform: uppercase;
+    transition: 0.5s;
+    z-index: 1;
+}
