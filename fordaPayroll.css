@@ -1,0 +1,124 @@
+*
+{
+  margin:0px;padding:0px;
+  letter-spacing:8px;
+  image-rendering: pixelated;
+  font-smooth: never;-webkit-font-smoothing: none;
+}
+
+a {
+    text-decoration:none;
+
+    }
+
+a:link {
+    color:#000000;
+    }
+
+a:visited {
+    color:#000000;
+    }
+
+a:hover {
+    color:#ffffff;
+    animation: wiredB2 1s ease-out infinite;
+
+    }
+
+a:active {
+    color:#d2738a;
+    }
+
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color:#914e5f;
+    color:#d2738a;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 0% 0%;
+}
+
+h2 
+{
+    color: #333;
+}
+
+form 
+{
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label 
+{
+    display: block;
+    margin-bottom: 8px;
+}
+
+input
+{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button 
+{
+    background-color: #b2cbe4;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td
+{
+    border: 2px solid #ffffff;
+    padding: 8px;
+    text-align: left;
+    background-color: #d4d7f8;
+    color: #000000;
+}
+
+th 
+{
+    background-color: #000000;
+    color: #d2738a;
+}
+
+a 
+{
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+a:hover 
+{
+    text-decoration: underline;
+}
+
+h3
+{
+    color: #000000;
+}
