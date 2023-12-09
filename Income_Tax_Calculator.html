@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <link rel="stylesheet" type="text/css" href="fordaIncome.css">
+</head>
+<body>
+    <h2>Income Tax Calculator</h2>
+    <img class="logo" src=https://64.media.tumblr.com/2bd8bac8f18344fa3860f6c823bc337c/979940d319324b56-71/s400x600/8890f0e44e7183198c13d0a8500f5d221c75b811.gifv>
+    
+    <form id="incomeForm">
+        <label for="taxable_income">Enter Taxable Income:</label>
+        <input type="number" id="taxable_income" required>
+        <br>
+        <button type="button" onclick="calculateIncomeTax()">Calculate Income Tax</button>
+    </form>
+
+    <p id="result"></p>
+    <a href="index.html">Back to Homepage</a>
+
+    <script>
+        function calculateIncomeTax() {
+            var taxableIncome = parseFloat(document.getElementById("taxable_income").value);
+            var incomeTax = calculateIncomeTaxAmount(taxableIncome);
+            document.getElementById("result").innerText = "Income Tax for Taxable Income of ₱" + taxableIncome.toFixed(2) + ": ₱" + incomeTax.toFixed(2);
+        }
+
+        function calculateIncomeTaxAmount(income) {
+            if (income <= 250000) {
+                return 0;
+            } else if (income <= 400000) {
+                return 0.20 * (income - 250000);
+            } else if (income <= 800000) {
+                return 30000 + 0.25 * (income - 400000);
+            } else if (income <= 2000000) {
+                return 130000 + 0.30 * (income - 800000);
+            } else if (income <= 8000000) {
+                return 490000 + 0.32 * (income - 2000000);
+            } else {
+                return 2410000 + 0.35 * (income - 8000000);
+            }
+        }
+    </script>
+</body>
+</html>
+
