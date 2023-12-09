@@ -1,0 +1,91 @@
+*
+ 
+{
+  margin:0px;padding:0px;
+  letter-spacing:8px;
+  image-rendering: pixelated;
+  font-smooth: never;-webkit-font-smoothing: none;
+}
+body 
+{
+    background-image:url(https://butwhytho.net/wp-content/uploads/2019/12/neon-genesis-evangelion-shinji-strangle-asuka-e1577649630718-1024x560.jpg);
+    background-color:#130c0e;
+    color:#c1b492;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 0% 0%;
+
+
+
+    }
+
+a {
+    text-decoration:none;
+
+    }
+
+a:link {
+    color:#000000;
+    }
+
+a:visited {
+    color:#d2738a;
+    }
+
+a:hover {
+    color:#ffffff;
+    animation: wiredB2 1s ease-out infinite;
+
+    }
+
+a:active {
+    color:#d2738a;
+    }
+
+#navbar {
+    background-color:hsla(0, 0%, 0%, 0);
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/A_black_background.jpg/640px-A_black_background.jpg);
+    width:800px;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:40px;
+    box-shadow:black 0px 5px 10px;
+    text-align:center;
+    padding-top:40px;
+
+    }
+
+h1 {
+    font-size:20px;
+    font-family:Times, "Times New Roman", serif;
+    font-weight:normal;
+    clear:both;
+    }
+
+ul li a
+{
+    position: relative;
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    background: #d4d7f8;
+    text-transform: uppercase;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+ul li a:hover
+{
+    transform: scale(1.4);
+    z-index: 1000;
+    background: #b2cbe4;
+}
+
+ul li
+{
+    list-style: none;
+}
+
+
