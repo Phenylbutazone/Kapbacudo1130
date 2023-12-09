@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Operations</title>
+    <link rel="stylesheet" type="text/css" href="fordaNth.css">
+
+</head>
+<body>
+
+    <h2>Number Operations</h2>
+    <img class="logo" src=https://64.media.tumblr.com/b54c0e01616c97e18f2b7a622281850f/7b80321330466a6a-c0/s540x810/a797453dfd60782d78f42127b10776cfdcd92fd7.gifv>
+
+    <label for="inputNumber">Enter an Integer (n): </label>
+    <input type="number" id="inputNumber" min="0" required>
+    <button onclick="calculate()">Calculate</button>
+    <br>
+
+    <h4>Results:</h4>
+    <p id="factorialResult"></p>
+    <p id="sumResult"></p>
+    <p id="averageResult"></p>
+
+      <a href="index.html">Back to Homepage</a>
+
+    <script>
+        function calculate() {
+           
+            var n = parseInt(document.getElementById("inputNumber").value);
+
+           
+            var factorial = 1;
+            var i = 1;
+            while (i <= n) {
+                factorial *= i;
+                i++;
+            }
+
+            
+            var sum = 0;
+            var j = 1;
+            do {
+                sum += j;
+                j++;
+            } while (j <= n);
+
+            
+            var total = 0;
+            for (var k = 1; k <= n; k++) {
+                total += k;
+            }
+            var average = total / n;
+
+            
+            document.getElementById("factorialResult").innerText = "Factorial: " + factorial;
+            document.getElementById("sumResult").innerText = "Sum: " + sum;
+            document.getElementById("averageResult").innerText = "Average: " + average.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
